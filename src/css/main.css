@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap");
+body {
+  background-color: #252627;
+}
+
+body .App .App-header {
+  text-align: center;
+  color: #FFF9FB;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+body .App .App-header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body .App .main-container .todo-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 20px;
+  margin-top: 50px;
+}
+
+body .App .main-container .todo-list .todo-item {
+  color: #FFF9FB;
+  width: 25%;
+  min-width: 350px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
+  padding: 10px;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .App .main-container .todo-list .todo-item input {
+  -ms-grid-column-align: left;
+      justify-self: left;
+  background-color: #252627;
+  color: white;
+}
+
+body .App .main-container .todo-list .todo-item input:hover {
+  cursor: pointer;
+}
+
+body .App .main-container .todo-list .todo-item h3 {
+  margin: 0;
+}
+
+body .App .main-container .todo-list .todo-item button {
+  width: 50%;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  background-color: #BB0A21;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+body .App .main-container .todo-list .todo-item button:hover {
+  background-color: #8f081a;
+  cursor: pointer;
+}
+
+body .App .main-container .todo-list .incomplete {
+  background-color: #4B88A2;
+}
+
+body .App .main-container .todo-list .completed {
+  background-color: #3BB273;
+}
+
+body .App .main-container .add-todo {
+  text-align: center;
+  padding: 20px;
+}
+
+body .App .main-container .add-todo .text-field {
+  padding: 10px 5px;
+  width: 300px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #D3D4D9;
+  margin-right: 10px;
+}
+
+body .App .main-container .add-todo .btn-submit {
+  padding: 10px;
+  background: none;
+  border: 1px solid #D3D4D9;
+  text-transform: uppercase;
+}
+
+body .App .main-container .add-todo .btn-submit:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

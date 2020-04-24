@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
+
+$lightGray: #D3D4D9;
+$blue: #4B88A2;
+$fireBrick: #BB0A21;
+$fireBrickHover: #8f081a;
+$seaGreen: #3BB273;
+$raisinBlack: #252627;
+$snow: #FFF9FB;
+
+body{
+    background-color: $raisinBlack;
+    .App{
+        .App-header{
+            text-align: center;
+            color: $snow;
+            font-family: 'Playfair Display SC', serif;
+            font-weight: 400;
+            font-size: 1.5em;
+            h1{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .main-container{
+            .todo-list{
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                row-gap: 20px;
+                margin-top: 50px;
+                .todo-item{
+                    color: $snow;
+                    width: 25%;
+                    min-width: 350px;
+                    display: grid;
+                    grid-template-columns: 15% 70% 15%;
+                    padding: 10px;
+                    align-self: center;
+                    input{
+                        justify-self: left;
+                        background-color: $raisinBlack;
+                        color: white;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    h3{
+                        margin: 0;
+                    }
+                    button{
+                        width: 50%;
+                        justify-self: right;
+                        background-color: $fireBrick;
+                        border: none;
+                        color: white;
+                        font-weight: bold;
+                        &:hover{
+                            background-color: $fireBrickHover;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .incomplete{
+                    background-color: $blue;
+                }
+                .completed {
+                    background-color: $seaGreen;
+                }
+            }
+            .add-todo{
+                text-align: center;
+                padding: 20px;
+                .text-field{
+                    padding: 10px 5px;
+                    width: 300px;
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid $lightGray;
+                    margin-right: 10px;
+                }
+                .btn-submit{
+                    padding: 10px;
+                    background: none;
+                    border: 1px solid $lightGray;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color: rgba(255,255,255,.1);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
