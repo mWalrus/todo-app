@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
 body {
   background-color: #252627;
+  font-family: 'Baloo bhaina 2', cursive;
 }
 
 body .App .App-header {
   text-align: center;
   color: #FFF9FB;
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Baloo Bhaina 2', cursive;
   font-weight: 400;
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 body .App .App-header h1 {
@@ -32,11 +35,10 @@ body .App .main-container .todo-list .todo-item {
   min-width: 350px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% 70% 15%;
-      grid-template-columns: 15% 70% 15%;
-  padding: 10px;
-  -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-columns: 10% 75% 15%;
+      grid-template-columns: 10% 75% 15%;
+  padding: 20px 10px;
+  border-radius: 10px;
 }
 
 body .App .main-container .todo-list .todo-item input {
@@ -52,6 +54,10 @@ body .App .main-container .todo-list .todo-item input:hover {
 
 body .App .main-container .todo-list .todo-item h3 {
   margin: 0;
+  line-height: 30px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.8em;
 }
 
 body .App .main-container .todo-list .todo-item button {
@@ -62,6 +68,8 @@ body .App .main-container .todo-list .todo-item button {
   border: none;
   color: white;
   font-weight: bold;
+  max-height: 30px;
+  border-radius: 5px;
 }
 
 body .App .main-container .todo-list .todo-item button:hover {
@@ -78,8 +86,15 @@ body .App .main-container .todo-list .completed {
 }
 
 body .App .main-container .add-todo {
-  text-align: center;
   padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 30%;
+  margin: auto;
+  row-gap: 20px;
+  justify-items: center;
 }
 
 body .App .main-container .add-todo .text-field {
@@ -94,8 +109,14 @@ body .App .main-container .add-todo .text-field {
 body .App .main-container .add-todo .btn-submit {
   padding: 10px;
   background: none;
+  font-family: 'Pathway Gothic One', sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.3em;
   border: 1px solid #D3D4D9;
   text-transform: uppercase;
+  border-radius: 10px;
+  color: #FFF9FB;
+  width: 20%;
 }
 
 body .App .main-container .add-todo .btn-submit:hover {

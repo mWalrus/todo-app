@@ -10,8 +10,8 @@ class TodoItem extends React.Component {
                     onChange={this.props.markComplete.bind(this, id)}
                     defaultChecked={this.props.todo.completed}
                 />
-                <h3>{'    ' + title}</h3>
-                <button onClick={this.props.delTodo.bind(this, id)}>X</button>
+                <h3>{title}</h3>
+                <button onClick={this.props.delTodo.bind(this, id)}>✕</button>
             </div>
         )
     }
