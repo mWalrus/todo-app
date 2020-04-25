@@ -1,5 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {Helmet} from 'react-helmet'
 import './css/main.css'
 
 import { v4 as uuidv4 } from 'uuid'
@@ -50,12 +51,16 @@ class App extends React.Component {
   render () {
     return (
       <Router>
-        <Route exact path="/todo" render={props => (
+        <Route path="/todo" render={props => (
           <div className="App">
-          <header className="App-header">
-            <h1>todo list</h1>
-          </header>
-          <div className='main-container'>
+            <Helmet>
+              <title>Todo List</title>
+              <link rel="icon" href="./raspi.ico"/>
+            </Helmet>
+            <header className="App-header">
+              <h1>todo list</h1>
+            </header>
+            <div className='main-container'>
             <AddTodo addTodo={this.addTodo}/>
             <div className='todo-list'>
               <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
